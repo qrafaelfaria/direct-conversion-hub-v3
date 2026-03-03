@@ -49,7 +49,7 @@ const PricingSection = () => {
 
             <ul className="space-y-3 mb-8 flex-1">
               {[
-                "+150 Moldes de Caixa Mini Confeiteiro",
+                "+250 Moldes de Caixa Mini Confeiteiro",
                 "100% editável no Canva grátis",
                 "Arquivos organizados por tema",
               ].map((item) => (
@@ -103,7 +103,7 @@ const PricingSection = () => {
 
             <ul className="space-y-3 mb-8 flex-1">
               {[
-                "+150 Moldes de Caixa Mini Confeiteiro",
+                "+250 Moldes de Caixa Mini Confeiteiro",
                 "100% editável no Canva grátis",
                 "Arquivos organizados por tema",
                 "Posts para o Instragram Prontos e Editáveis 2026",

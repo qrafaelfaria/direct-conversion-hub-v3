@@ -22,17 +22,7 @@ const bonuses = [
     image: labelsImage,
     title: "Aula de como Fazer as Personalizações no Canva",
     description: "Aula gratuita para você aprender a fazer as personalizações da forma certa no Canva.",
-  },
-  {
-    image: sacola,
-    title: "Moldes de Sacolinhas Páscoa",
-    description: "Modelos temáticos prontos para editar e imprimir para a Páscoa.",
-  },
-  {
-    image: mini,
-    title: "Moldes de Mini Ovos Páscoa",
-    description: "Arquivos editáveis para criar mini ovos personalizados com praticidade.",
-  },
+  }
 ];
 
 const BonusSection = () => {

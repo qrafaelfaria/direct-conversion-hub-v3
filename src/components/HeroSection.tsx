@@ -24,7 +24,7 @@ const HeroSection = () => {
           <img src="/Pascoa.png" alt="Descrição da Imagem" className="mx-auto mb-8 w-full max-w-7xl h-auto object-contain mt-12" />
 
           <p className="text-lg sm:text-xl text-black max-w-2xl mx-auto mb-8 text-balance">
-            Moldes prontos para impressão e editáveis no Canva! 
+            ✅ Mini Confeiteiro | ✅ Sacola Infantil | ✅ Caixa Surpresa
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
