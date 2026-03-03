@@ -17,8 +17,8 @@ const HeroSection = () => {
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-display font-black leading-tight text-foreground text-balance mb-6">
-            +150 Moldes de{" "}
-            <span className="text-[#ff0073]">Caixa Mini Confeiteiro</span>
+            +250 Moldes{" "}
+            <span className="text-[#ff0073]">Prontos para a Páscoa 🐰</span>
           </h1>
 
           <img src="/Pascoa.png" alt="Descrição da Imagem" className="mx-auto mb-8 w-full max-w-7xl h-auto object-contain mt-12" />
