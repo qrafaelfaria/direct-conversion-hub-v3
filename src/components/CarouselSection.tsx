@@ -67,7 +67,7 @@ const CarouselSection = () => {
             </h2>
             <div className="relative w-full max-w-sm mx-auto aspect-[9/16] bg-gray-200 rounded-lg overflow-hidden">
               <iframe
-                src="https://player.vimeo.com/video/1167867505"
+                src="https://player.vimeo.com/video/1173128316"
                 title="Vimeo video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

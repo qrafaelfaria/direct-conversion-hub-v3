@@ -16,8 +16,7 @@ const FAQSection: React.FC = () => {
           <AccordionItem value="item-1">
             <AccordionTrigger>O que eu recebo ao comprar?</AccordionTrigger>
             <AccordionContent>
-              Você recebe acesso imediato por e‑mail ao kit com +150 moldes de Caixa Mini Confeiteiro,
-              todos organizados por tema e 100% editáveis no Canva (versão gratuita). No plano Premium,
+              Você recebe acesso imediato por e‑mail ao kit com +250 moldes, todos organizados por tema e 100% editáveis no Canva. No plano Premium,
               você ainda recebe bônus como posts para Instagram, cardápio digital e uma aula de personalização.
             </AccordionContent>
           </AccordionItem>
@@ -41,7 +40,7 @@ const FAQSection: React.FC = () => {
           <AccordionItem value="item-4">
             <AccordionTrigger>Qual a diferença entre o Básico e o Premium?</AccordionTrigger>
             <AccordionContent>
-              O Básico inclui +150 moldes editáveis no Canva. O Premium inclui tudo do Básico
+              O Básico inclui +250 moldes editáveis no Canva. O Premium inclui tudo do Básico
               e ainda: posts para Instagram, cardápio digital, aula de personalização,
               acesso vitalício e suporte prioritário via WhatsApp.
             </AccordionContent>
