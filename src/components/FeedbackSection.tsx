@@ -63,7 +63,7 @@ const duplicated = [...cards, ...cards];
         </div>
 
 <div className="relative mt-12">
-        <div className="flex animate-marquee bg-white" style={{ width: "fit-content" }}>
+        <div className="flex animate-marquee bg-white p-12" style={{ width: "fit-content" }}>
           {duplicated.map((card, i) => (
             <div
               key={i}

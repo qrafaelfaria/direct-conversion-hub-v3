@@ -12,7 +12,7 @@ const PricingSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl sm:text-4xl font-display font-black text-foreground mb-3">
-            Escolha o melhor plano para você
+            ⏰ ÚLTIMA CHANCE — OFERTA TERMINA HOJE
           </h2>
         </motion.div>
 
@@ -38,7 +38,7 @@ const PricingSection = () => {
               <div className="flex items-baseline gap-1">
                 <span className="text-6xl font-display font-black text-[#ff0073]">R$ 10</span>
                 <span className="text-[#ff0073] text-medium">,00</span>
-              </div>s
+              </div>
             </div>
 
             <ul className="space-y-3 mb-8 flex-1">
