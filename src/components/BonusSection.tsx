@@ -27,7 +27,7 @@ const bonuses = [
 
 const BonusSection = () => {
   return (
-    <section className="py-12 sm:py-20">
+    <section className="py-12 sm:py-20 bg-white">
       <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
