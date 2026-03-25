@@ -61,6 +61,26 @@ const CarouselSection = () => {
           ))}
         </div>
       </div>
+      
+      <div className="section-container mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {[
+            "✅ SACOLA OVO 100G - 150G",
+            "✅ SACOLA OVO 200G - 250G",
+            "✅ SACOLA OVO 300G - 350G",
+            "✅ SACOLA OVINHO 50G",
+            "✅ CAIXA SURPRESA 300G - 350G",
+            "✅ KIT CONFEITEIRO",
+            "🎁 POSTS PARA O INSTAGRAM",
+            "🎁 CARDÁPIOS EDITÁVEIS",
+            "🎁 TUTORIAL PERSONALIZAÇÃO NO CANVA"
+          ].map((text) => (
+            <div key={text} className="card-benefit text-center border-2 border-[#ff0073]/60 rounded-full py-3">
+              <p className="text-base sm:text-lg font-display font-bold text-foreground">{text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
           <div className="section-container mt-24 text-center">
             <h2 className="text-3xl sm:text-4xl font-display font-black text-foreground mb-6">
               Veja o material por dentro

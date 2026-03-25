@@ -1,20 +1,7 @@
 import { motion } from "framer-motion";
-import { Check, Star, Gift, ChevronsDown } from "lucide-react";
-import React, { useState } from "react";
-import DiscountPopup from "./DiscountPopup";
+import { Check, Star } from "lucide-react";
 
 const PricingSection = () => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-
-  const handleBasicClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setIsPopupOpen(true);
-  };
-
-  const handleClosePopup = () => {
-    setIsPopupOpen(false);
-  };
-
   return (
     <section id="planos" className="py-12 sm:py-20 bg-secondary">
       <div className="section-container">
@@ -29,54 +16,7 @@ const PricingSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-          {/* Basic */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="card-benefit flex flex-col"
-          >
-            <h3 className="text-xl font-display font-bold text-foreground mb-2">
-              Pacote Básico
-            </h3>
-            <div className="mb-6">
-              <div className="flex items-baseline gap-1">
-                <span className="text-4xl font-display font-black text-foreground">R$ 10</span>
-                <span className="text-muted-foreground text-sm">,00</span>
-              </div>
-            </div>
-
-            <ul className="space-y-3 mb-8 flex-1">
-              {[
-                "+250 Moldes de Caixa Mini Confeiteiro",
-                "100% editável no Canva grátis",
-                "Arquivos organizados por tema",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-2 text-sm text-foreground">
-                  <Check className="w-4 h-4 text-foreground mt-0.5 flex-shrink-0" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-
-            <a href="#" onClick={handleBasicClick} className="cta-button-outline w-full text-center text-base">
-              QUERO O BÁSICO
-            </a>
-
-            <div className="text-center mt-4">
-              <p className="text-red-500 font-bold">
-                ATENÇÃO: Temos uma oferta <span className="underline">ainda mais</span>{" "}
-                <span className="underline">VANTAJOSA</span> para você! Veja logo abaixo
-              </p>
-              <div className="flex flex-col items-center mt-2">
-                <ChevronsDown className="w-6 h-6 text-red-500" />
-                <ChevronsDown className="w-6 h-6 text-red-500 -mt-2" />
-              </div>
-            </div>
-
-          </motion.div>
-
+        <div className="max-w-xl mx-auto">
           {/* Premium */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
@@ -96,9 +36,9 @@ const PricingSection = () => {
             <div className="mb-6">
               <span className="text-muted-foreground text-sm line-through">De R$ 97,00</span>
               <div className="flex items-baseline gap-1">
-                <span className="text-6xl font-display font-black text-[#ff0073]">R$ 19</span>
-                <span className="text-[#ff0073] text-medium">,90</span>
-              </div>
+                <span className="text-6xl font-display font-black text-[#ff0073]">R$ 10</span>
+                <span className="text-[#ff0073] text-medium">,00</span>
+              </div>s
             </div>
 
             <ul className="space-y-3 mb-8 flex-1">
@@ -122,7 +62,7 @@ const PricingSection = () => {
               ))}
             </ul>
 
-            <a href="https://pay.wiapy.com/qnPOhYBi55" className="cta-button w-full text-center text-base animate-pulse-glow">
+            <a href="https://pay.wiapy.com/M2HsCRlzc" className="cta-button w-full text-center text-base animate-pulse-glow">
               QUERO O PREMIUM
             </a>
             <img src="/pagamentos.jpeg" alt="Métodos de Pagamento" className="mx-auto mt-4" />
@@ -132,7 +72,6 @@ const PricingSection = () => {
           </motion.div>
         </div>
       </div>
-      <DiscountPopup isOpen={isPopupOpen} onClose={handleClosePopup} />
     </section>
   );
 };
