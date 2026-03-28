@@ -22,10 +22,10 @@ const PricingSection = () => {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="card-benefit flex flex-col relative border-2 border-[#ff0073] shadow-lg shadow-[#ff0073]/50"
+            className="card-benefit flex flex-col relative border-2 border-[#0c3769] shadow-lg shadow-[#0c3769]/50"
           >
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-              <span className="badge-popular flex items-center gap-1 bg-[#ff0073] text-white px-2 py-1 rounded-full text-medium">
+              <span className="badge-popular flex items-center gap-1 bg-[#0c3769] text-white px-2 py-1 rounded-full text-medium">
                 <Star className="w-6 h-6" /> MAIS ESCOLHIDO
               </span>
             </div>
@@ -34,10 +34,10 @@ const PricingSection = () => {
               Pacote Premium
             </h3>
             <div className="mb-6">
-              <span className="text-muted-foreground text-sm line-through">De R$ 97,00</span>
+              <span className="text-muted-foreground text-sm line-through">De R$ 197,00</span>
               <div className="flex items-baseline gap-1">
-                <span className="text-6xl font-display font-black text-[#ff0073]">R$ 10</span>
-                <span className="text-[#ff0073] text-medium">,00</span>
+                <span className="text-6xl font-display font-black text-[#0c3769]">R$ 19</span>
+                <span className="text-[#0c3769] text-medium">,90</span>
               </div>
             </div>
 
