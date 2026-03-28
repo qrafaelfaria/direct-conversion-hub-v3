@@ -13,10 +13,10 @@ const HowItWorksSection: React.FC = () => {
           <div className="flex flex-col items-center p-6 border-2 border-dashed border-blue-300 rounded-xl">
             <Mail className="w-12 h-12 text-yellow-500 mb-4" />
             <h3 className="text-xl font-display font-bold text-blue-600 mb-2">
-              CHEGA NO E-MAIL
+              +100 MOLDES PROFISSIONAIS
             </h3>
             <p className="text-gray-700 text-center">
-              Após a compra você recebe o acesso ao kit completo diretamente no seu email, pronto para abrir no Canva.
+              Todos com grade completa do PP ao GG com ajustes automáticos para nunca errar na medida.
             </p>
           </div>
 
@@ -24,10 +24,10 @@ const HowItWorksSection: React.FC = () => {
           <div className="flex flex-col items-center p-6 border-2 border-dashed border-blue-300 rounded-xl">
             <Brush className="w-12 h-12 text-gray-600 mb-4" />
             <h3 className="text-xl font-display font-bold text-blue-600 mb-2">
-              EDITE DIRETO NO CANVA
+              CHEGA NO E-MAIL
             </h3>
             <p className="text-gray-700 text-center">
-              Altere nomes, cores e detalhes em poucos minutos, de forma simples e sem precisar saber design.
+              pós a compra você recebe o acesso ao kit completo diretamente no seu email.
             </p>
           </div>
 
@@ -38,7 +38,7 @@ const HowItWorksSection: React.FC = () => {
               BAIXE, IMPRIMA E USE
             </h3>
             <p className="text-gray-700 text-center">
-              Exporte em alta qualidade, imprima quantas vezes quiser e tenha caixas únicas e profissionais para usar ou vender.
+              Exporte em alta qualidade, imprima quantas vezes quiser e tenha peças únicas e profissionais para usar ou vender.
             </p>
           </div>
         </div>
