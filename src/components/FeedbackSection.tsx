@@ -9,10 +9,9 @@ import image69 from "/Pija06.jpg";
 
 const FeedbackSection: React.FC = () => {
   const images = [
-    "/whatsapp-chat.png",
-    "/whatsapp-chat (1).png",
-    "/whatsapp-chat (2).png",
-    "/whatsapp-chat (3).png",
+    "/Feed06.png",
+    "/Feed07.png",
+    "/Feed08.png",
   ];
 const cards = [image1, image7, image8, image20, image44, image69];
 const duplicated = [...cards, ...cards];
