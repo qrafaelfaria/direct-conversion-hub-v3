@@ -3,7 +3,7 @@ import { Zap, Shield, Clock } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden pt-12 pb-8 sm:pt-20 sm:pb-12 bg-[#97c9fc]">
+    <section className="relative overflow-hidden pt-12 pb-8 sm:pt-20 sm:pb-12">
       <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -16,37 +16,31 @@ const HeroSection = () => {
             <span>Oferta por tempo limitado</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-display font-black leading-tight text-foreground text-balance mb-6">
-            +250 Moldes{" "}
-            <span className="text-[#ff0073]">Prontos para a Páscoa 🐰</span>
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-display font-black leading-tight text-foreground text-balance mt-6">
+            +100 Moldes{" "}
+            <span className="text-[#0c3769]">Hospitalares Profissionais </span>
           </h1>
 
-          <img src="/Pascoa.png" alt="Descrição da Imagem" className="mx-auto mb-8 w-full max-w-7xl h-auto object-contain mt-12" />
+          <img src="/HeroHospital.png" alt="Descrição da Imagem" className="mx-auto mb-8 w-full max-w-7xl h-auto object-contain mt-12" />
 
-          <p className="text-lg sm:text-xl text-black max-w-2xl mx-auto mb-8 text-balance">
-            ✅ Mini Confeiteiro | ✅ Sacola Infantil | ✅ Caixa Surpresa
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+          <div className="flex flex-wrap items-center justify-center gap-6 text-md text-black">
+            <div className="flex items-center gap-2">
+              <span>✅ Acesso Vitalício</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span>✅ Prontos para imprimir em A4 ou Plotter (84cm)</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span>✅ Organizados por modelos</span>
+            </div>
+            
+          </div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
             <a href="#planos" className="cta-button animate-pulse-glow w-full sm:w-auto text-center">
               QUERO ACESSAR AGORA
             </a>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-black">
-            <div className="flex items-center gap-2">
-              <Shield className="w-4 h-4 text-black" />
-              <span>100% Editável</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Clock className="w-4 h-4 text-black" />
-              <span>Pronto para imprimir</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Zap className="w-4 h-4 text-black" />
-              <span>Pode suar </span>
-            </div>
-          </div>
         </motion.div>
       </div>
     </section>
