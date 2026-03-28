@@ -105,7 +105,7 @@
 
 @layer components {
   .cta-button {
-    @apply inline-flex items-center justify-center rounded-xl bg-[#ff0073] text-white font-bold text-lg px-8 py-4 transition-all duration-300 hover:scale-105 active:scale-95;
+    @apply inline-flex items-center justify-center rounded-xl bg-[#075d00] text-white font-bold text-lg px-8 py-4 transition-all duration-300 hover:scale-105 active:scale-95;
     box-shadow: var(--shadow-cta);
   }
 
@@ -150,7 +150,7 @@
   }
 
   @keyframes pulse-glow {
-    0%, 100% { box-shadow: 0 0 0 0 hsl(24 100% 50% / 0.4); }
+    0%, 100% { box-shadow: 0 0 0 0 hsla(125, 100%, 29%, 0.699); }
     50% { box-shadow: 0 0 0 12px hsl(24 100% 50% / 0); }
   }
 
