@@ -43,15 +43,11 @@ const PricingSection = () => {
 
             <ul className="space-y-3 mb-8 flex-1">
               {[
-                "+250 Moldes de Caixa Mini Confeiteiro",
-                "100% editável no Canva grátis",
-                "Arquivos organizados por tema",
-                "Posts para o Instragram Prontos e Editáveis 2026",
-                "Modelo de Cardápio Digital Editável",
-                "Aula de como Fazer as Personalizações no Canva",
-                "Moldes de Sacolinhas Páscoa",
-                "Moldes de Mini Ovos Páscoa",
-                "Acesso prioritário ao suporte",
+                "+100 Moldes Hospitalares Profissionais",
+                "Modelos para Vendas Rápidas: peças de uso diário em clínicas, consultórios e hospitais, prontas para produzir e vender.",
+                "Tamanhos Completos: do PP ao GG, com ajustes automáticos para nunca errar na medida.",
+                "Molde Inteligente: otimizados para economizar tecido e aumentar seu lucro por peça.",
+                "Prontos para imprimir",
                 "Acesso Vitalício",
                 "Suporte prioritário via WhatsApp",
               ].map((item) => (
