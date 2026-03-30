@@ -1,31 +1,7 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 import { Check, Star } from "lucide-react";
 
 const PricingSection = () => {
-  const getTimeLeft = () => {
-    const now = new Date();
-    const end = new Date();
-    end.setHours(23, 59, 59, 999);
-    const diff = end.getTime() - now.getTime();
-    const total = Math.max(diff, 0);
-    const hours = Math.floor(total / (1000 * 60 * 60));
-    const minutes = Math.floor((total % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((total % (1000 * 60)) / 1000);
-    return { hours, minutes, seconds };
-  };
-
-  const [timeLeft, setTimeLeft] = useState(getTimeLeft());
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setTimeLeft(getTimeLeft());
-    }, 1000);
-    return () => clearInterval(id);
-  }, []);
-
-  const pad = (n: number) => String(n).padStart(2, "0");
-
   return (
     <section id="planos" className="py-4 sm:py-20 bg-[#0c3769]">
       <div className="section-container">
@@ -38,18 +14,6 @@ const PricingSection = () => {
         </motion.div>
 
         <div className="max-w-xl mx-auto">
-          <div className="mb-6 rounded-2xl bg-[#ffe500] text-[#0c3769] px-6 py-4 text-center shadow-md">
-            <div className="text-lg sm:text-xl font-display font-black">URGÊNCIA</div>
-            <div className="text-sm sm:text-base font-semibold mt-1">⚠️ Acesso liberado por tempo limitado</div>
-            <div className="text-xs sm:text-sm mt-0.5">Depois disso, o valor pode subir ou sair do ar.</div>
-            <div className="mt-3 flex items-center justify-center gap-2">
-              <span className="text-3xl sm:text-4xl font-display font-black">{pad(timeLeft.hours)}</span>
-              <span className="text-3xl sm:text-4xl font-display font-black">:</span>
-              <span className="text-3xl sm:text-4xl font-display font-black">{pad(timeLeft.minutes)}</span>
-              <span className="text-3xl sm:text-4xl font-display font-black">:</span>
-              <span className="text-3xl sm:text-4xl font-display font-black">{pad(timeLeft.seconds)}</span>
-            </div>
-          </div>
           {/* Premium */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
