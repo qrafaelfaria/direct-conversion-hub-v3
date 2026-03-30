@@ -14,6 +14,32 @@ const PricingSection = () => {
         </motion.div>
 
         <div className="max-w-xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="card-benefit text-center mb-8 border-2 border-[#0c3769] bg-white"
+          >
+            <div className="px-6 py-6">
+              <p className="tracking-widest text-xs sm:text-sm font-display font-black text-[#0c3769]">
+                ACESSO IMEDIATO!
+              </p>
+              <h3 className="mt-1 text-2xl sm:text-3xl font-display font-black text-[#0c3769]">
+                COMO APROVEITAR A{" "}
+                <span className="text-black bg-[#ffe500] px-2 py-1 text-medium">PROMOÇÃO?</span>
+              </h3>
+              <p className="mt-4 text-sm sm:text-base text-muted-foreground">
+                Após realizar o pagamento você recebe{" "}
+                <span className="font-semibold text-black font-black">automaticamente</span> por e‑mail
+                e também no seu <span className="font-semibold text-[#0c3769]">WhatsApp</span> o link para acessar o
+                material em vídeo e bônus adicionais para baixar e estudar onde quiser.
+              </p>
+              <img src="/logo_wiapy_fCXIrP.png" alt="Wiapy" className="mx-auto my-6 w-44 h-auto" />
+              <p className="text-xs sm:text-sm text-muted-foreground">
+               Lembramos que sua compra está protegida pela Wiapy.
+              </p>
+            </div>
+          </motion.div>
           {/* Premium */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
@@ -41,12 +67,12 @@ const PricingSection = () => {
             <ul className="space-y-3 mb-8 flex-1">
               {[
                 "+100 Moldes Hospitalares Profissionais",
-                "Modelos para Vendas Rápidas: peças de uso diário em clínicas, consultórios e hospitais, prontas para produzir e vender.",
-                "Tamanhos Completos: do PP ao GG, com ajustes automáticos para nunca errar na medida.",
-                "Molde Inteligente: otimizados para economizar tecido e aumentar seu lucro por peça.",
-                "Prontos para imprimir",
-                "Acesso Vitalício",
-                "Suporte prioritário via WhatsApp",
+                "Lista de Fornecedores Atualizada",
+                "Certificado de Finalização",
+                "Grupo VIP Alunas",
+                "Acesso Vitalício + Acesso Imediato",
+                "Atualizações Constantes",
+                "Garantia de satisfação de 30 Dias",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2 text-medium text-black font-semibold">
                   <Check className="w-6 h-6 text-success mt-0.5 flex-shrink-0" />
