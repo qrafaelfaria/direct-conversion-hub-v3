@@ -17,7 +17,7 @@ const PricingSection = () => {
             <div className="bg-[#c43c6f] py-2 text-center text-white text-sm font-black uppercase tracking-wider">
               ⭐ MAIS VENDIDO ⭐
             </div>
-            <div className="bg-[#cc1d24] py-1.5 text-center text-white text-xs sm:text-sm font-black uppercase tracking-wider">
+            <div className="bg-[#cc1d24] py-1.5 text-center text-white text-medium sm:text-medium font-black uppercase tracking-wider">
               🔥 RESTAM APENAS 10 VAGAS 🔥
             </div>
 
@@ -84,7 +84,7 @@ const PricingSection = () => {
                   href="https://pay.wiapy.com/eWxbrwirql" 
                   className="block w-full py-5 bg-[#c43c6f] text-white text-xl font-black uppercase rounded-2xl shadow-lg hover:bg-[#a32d5a] transition-all transform hover:scale-[1.02] active:scale-[0.98] animate-pulse-glow"
                 >
-                  QUERO O PREMIUM
+                  QUERO GARANTIR MINHA VAGA
                 </a>
               </div>
 
