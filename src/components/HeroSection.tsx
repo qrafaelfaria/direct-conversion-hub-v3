@@ -46,18 +46,6 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-3 text-md text-white font-black">
-            <div className="flex items-center gap-2">
-              <span>Sem experiência.</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span>Sem precisar inventar modelo.</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span>Sem depender de ninguém.</span>
-            </div>
-            
-          </div>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
             <a href="#planos" className="cta-button animate-pulse-glow w-full sm:w-auto text-center">
               👉 QUERO GARANTIR MINHA VAGA
