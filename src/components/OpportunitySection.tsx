@@ -37,6 +37,22 @@ const OpportunitySection = () => {
                 </div>
               </div>
             </div>
+
+            <div className="mt-8 text-center space-y-4">
+              <div className="flex flex-col items-center gap-2 text-black font-bold">
+                <div className="flex items-center gap-2">
+                  <span className="text-[#c43c6f]">❌</span>
+                  <span>Não precisa de experiência</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-[#c43c6f]">❌</span>
+                  <span>Não precisa saber criar moldes</span>
+                </div>
+              </div>
+              <p className="text-black text-lg sm:text-xl font-medium px-4">
+                Você aprende, faz e pode vender suas próprias peças hospitalares com segurança. 🏥👗
+              </p>
+            </div>
           </div>
 
 
