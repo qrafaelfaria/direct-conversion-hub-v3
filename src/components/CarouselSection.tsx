@@ -17,20 +17,14 @@ const duplicated = [...cards, ...cards];
 
 const CarouselSection = () => {
   return (
-    <section className="py-12 sm:py-20 overflow-hidden">
-      <div className="section-container mb-8">
+    <section className="py-12 sm:py-12 overflow-hidden bg-[#fbe8ee]">
+      <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-3xl sm:text-4xl font-display font-black text-[#0c3769] mb-3">
-            Confira alguns dos modelos que você vai receber
-          </h2>
-          <p className="text-black text-lg">
-            Ideal para costureiras que buscam agilidade e precisão!
-          </p>
         </motion.div>
       </div>
 
