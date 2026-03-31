@@ -56,34 +56,6 @@ const OpportunitySection = () => {
           </div>
 
 
-           <div className="section-container mt-24 text-center pt-12">
-            <h2 className="text-2xl sm:text-3xl font-display font-black text-[#ffe500] text-center">
-              Veja como você vai imprimir seus moldes 👇
-            </h2>
-            <div className="relative w-full max-w-sm mx-auto aspect-[9/16] bg-gray-200 rounded-lg overflow-hidden mt-8">
-              <iframe
-                src="https://player.vimeo.com/video/1177880972"
-                title="Vimeo video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="absolute top-0 left-0 w-full h-full"
-              ></iframe>
-            </div>
-          </div>
-          <div className="section-container">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12"
-            >
-              <a href="#planos" className="cta-button animate-pulse-glow w-full sm:w-auto text-center">
-                QUERO ACESSAR AGORA
-              </a>
-            </motion.div>
-          </div>
-
         </motion.div>
       </div>
     </section>

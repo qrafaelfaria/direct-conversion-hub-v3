@@ -3,7 +3,7 @@ import { Check, Star } from "lucide-react";
 
 const PricingSection = () => {
   return (
-    <section id="planos" className="py-4 sm:py-20 bg-[#0c3769]">
+    <section id="planos" className="py-4 sm:py-20 bg-[#c43c6f]">
       <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -20,14 +20,14 @@ const PricingSection = () => {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="card-benefit flex flex-col relative border-2 border-[#0c3769] shadow-lg shadow-[#0c3769]/50"
+            className="card-benefit flex flex-col relative border-2 border-[#c43c6f] shadow-lg shadow-[#c43c6f]/50"
           >
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
             </div>
 
             <div className="px-4 sm:px-6 pt-4">
               <div className="mx-auto max-w-sm">
-                <div className="px-4 py-2 text-center bg-[#ffe500] text-[#0c3769] font-display text-2xl font-black">
+                <div className="px-4 py-2 text-center bg-[#c43c6f] text-white font-display text-2xl font-black">
                   VEJA TUDO O QUE VOCÊ VAI RECEBER AO ADQUIRIR HOJE
                 </div>
               </div>
