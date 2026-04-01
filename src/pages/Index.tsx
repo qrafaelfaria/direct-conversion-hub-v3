@@ -13,6 +13,7 @@ import FAQSection from "@/components/FAQSection";
 import FinalCTA from "@/components/FinalCTA";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import OpportunitySection from "@/components/OpportunitySection";
+import PurchaseNotification from "@/components/PurchaseNotification";
 
 const Index = () => {
   return (
@@ -27,6 +28,7 @@ const Index = () => {
       <EarningsSimulationSection />
       <FAQSection /> 
       <FinalCTA />
+      <PurchaseNotification />
     </div>
   );
 };
