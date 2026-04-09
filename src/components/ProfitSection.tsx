@@ -28,7 +28,7 @@ const ProfitSection = () => {
                 Peça Comum
               </div>
               <p className="text-gray-500 font-bold mb-4 uppercase tracking-tighter">Venda por</p>
-              <div className="text-4xl sm:text-5xl font-black text-gray-400">R$ 120</div>
+              <div className="text-4xl sm:text-5xl font-black text-gray-400">R$ 100</div>
               <div className="mt-8 pt-8 border-t border-gray-100">
                 <p className="text-gray-400 font-medium italic italic text-sm">Preço de mercado comum</p>
               </div>
@@ -43,7 +43,7 @@ const ProfitSection = () => {
               <div className="text-4xl sm:text-5xl font-black text-[#c43c6f]">R$ 150 <span className="text-lg">+</span></div>
               <div className="mt-8 pt-8 border-t border-[#f472b6]/20">
                 <p className="text-[#c43c6f] font-black text-xl flex items-center justify-center gap-2">
-                  <TrendingUp className="w-5 h-5" /> + R$ 30,00 DE LUCRO EXTRA
+                  <TrendingUp className="w-5 h-5" /> + R$ 50,00 DE LUCRO EXTRA
                 </p>
               </div>
             </div>
@@ -65,7 +65,7 @@ const ProfitSection = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 inline-block w-full max-w-lg border border-white/20">
                 <p className="text-xl sm:text-2xl font-bold mb-2">💵 Lucro adicional:</p>
                 <p className="text-5xl sm:text-7xl font-black text-[#ffe500] drop-shadow-md">
-                  R$ 900 <span className="text-2xl text-white">mensais</span>
+                  R$ 1500 <span className="text-2xl text-white">mensais</span>
                 </p>
               </div>
               
@@ -76,7 +76,7 @@ const ProfitSection = () => {
           </motion.div>
 
           <p className="text-gray-500 font-bold italic pt-4">
-            Quanto vale para você ganhar quase R$ 1.000 a mais sem trabalhar horas extras?
+            Quanto vale para você ganhar quase R$ 2.000 a mais sem trabalhar horas extras?
           </p>
         </motion.div>
       </div>

@@ -26,14 +26,21 @@ const PricingUpsellSection = () => {
             viewport={{ once: true }}
             className="bg-white flex flex-col relative border-4 border-[#c43c6f] rounded-[3rem] shadow-2xl overflow-hidden mb-12"
           >
+            {/* Scarcity Bar */}
+            <div className="bg-[#cc1d24] py-2 text-center text-white text-xs sm:text-sm font-black uppercase tracking-widest flex items-center justify-center gap-2">
+              <span className="inline-block w-2 h-2 bg-white rounded-full animate-ping" />
+              RESTAM APENAS 7 DISPONÍVEIS
+            </div>
+
             {/* Header Badges */}
-            <div className="bg-[#c43c6f] py-3 text-center text-white text-base font-black uppercase tracking-widest animate-pulse">
-              🎁 OFERTA ÚNICA E ESPECIAL 🎁
+            <div className="bg-[#c43c6f] py-3 text-center text-white text-base font-black uppercase tracking-widest">
+              🎁 OFERTA EXCLUSIVA DESTA PÁGINA
             </div>
 
             <div className="px-6 sm:px-12 pt-12 text-center pb-12">
               {/* Pricing */}
               <div className="space-y-2">
+                <p className="text-gray-400 font-bold mb-2">⚠️ Essa oferta NÃO aparecerá novamente</p>
                 <p className="text-gray-400 line-through text-2xl font-bold">De R$ 97,00</p>
                 <p className="text-gray-600 font-black text-xl uppercase tracking-tighter">Por apenas</p>
                 <div className="text-7xl sm:text-8xl font-black text-[#c43c6f] tracking-tighter my-4 drop-shadow-sm">
