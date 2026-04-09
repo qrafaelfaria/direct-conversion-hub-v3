@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CheckCircle2, AlertTriangle, Gem, ArrowRight, Ban } from "lucide-react";
+import { CheckCircle2, AlertTriangle, Gem, ArrowRight, Ban, ArrowDown } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -71,20 +71,12 @@ const HeroSection = () => {
           </div>
 
           <div className="flex flex-col items-center gap-6 mt-8">
-            <a href="#planos" className="cta-button scale-110 animate-pulse-glow w-full sm:w-auto text-center py-6 px-12 text-2xl flex items-center justify-center gap-3">
-              SIM! QUERO SER UMA ESPECIALISTA PREMIUM <ArrowRight className="w-6 h-6" />
+            <a 
+              href="#oferta" 
+              className="cta-button scale-105 sm:scale-110 animate-pulse-glow w-full max-w-sm sm:max-w-none sm:w-auto text-center py-5 px-6 sm:py-6 sm:px-12 text-lg sm:text-2xl flex items-center justify-center gap-3 leading-tight"
+            >
+              SIM! QUERO LUCRAR 3X MAIS<ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 shrink-0" />
             </a>
-            
-            <button className="group flex items-center gap-2 text-gray-400 hover:text-red-500 font-medium transition-all text-sm sm:text-base underline decoration-dotted">
-              <Ban className="w-4 h-4" />
-              Não, eu prefiro perder essa chance e continuar vendendo peças comuns
-            </button>
-          </div>
-
-          <div className="mt-12 flex flex-wrap justify-center gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-            <img src="/compra-segura.png" alt="Compra Segura" className="h-10" />
-            <img src="/garantia-7-dias.png" alt="Garantia" className="h-10" />
-            <img src="/acesso-imediato.png" alt="Acesso Imediato" className="h-10" />
           </div>
         </motion.div>
       </div>

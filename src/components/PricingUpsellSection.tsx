@@ -17,11 +17,11 @@ const PricingUpsellSection = () => {
         styles: {
           backgroundColor: "#c43c6f",
           hoverBackgroundColor: "#75394fff",
-          fontSize: "17px",
+          fontSize: "20px",
           borderRadius: "10px"
         },
-        refusalLinkUrl: "https://wiapy.com/login",
-        refusalLinkText: "Recusar está oferta",
+        refusalLinkUrl: "https://costurahospitalar.vercel.app",
+        refusalLinkText: "Não, eu prefiro perder essa chance e continuar vendendo peças comuns",
         refusalLinkColor: "#000000"
       });
     }
