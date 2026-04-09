@@ -1,7 +1,32 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
-import { Check, Star, Infinity, ShieldCheck, Gift, ArrowRight, Ban } from "lucide-react";
+import { Check, Star, Gift } from "lucide-react";
+
+declare global {
+  interface Window {
+    initWiapyUpsell: (config: any) => void;
+  }
+}
 
 const PricingUpsellSection = () => {
+  useEffect(() => {
+    if (typeof window.initWiapyUpsell === "function") {
+      window.initWiapyUpsell({
+        linkUrl: "https://pay.wiapy.com/checkout/69d71225585092329ccef181",
+        linkText: "SIM, EU ACEITO ESSA OFERTA",
+        styles: {
+          backgroundColor: "#c43c6f",
+          hoverBackgroundColor: "#75394fff",
+          fontSize: "17px",
+          borderRadius: "10px"
+        },
+        refusalLinkUrl: "https://wiapy.com/login",
+        refusalLinkText: "Recusar está oferta",
+        refusalLinkColor: "#000000"
+      });
+    }
+  }, []);
+
   return (
     <section id="oferta" className="py-12 sm:py-20 bg-white">
       <div className="section-container">
@@ -44,7 +69,7 @@ const PricingUpsellSection = () => {
                 <p className="text-gray-400 line-through text-2xl font-bold">De R$ 97,00</p>
                 <p className="text-gray-600 font-black text-xl uppercase tracking-tighter">Por apenas</p>
                 <div className="text-7xl sm:text-8xl font-black text-[#c43c6f] tracking-tighter my-4 drop-shadow-sm">
-                  R$ 29,90
+                  R$ 14,90
                 </div>
                 <p className="text-gray-500 text-lg font-bold italic">
                   Pagamento único. Sem mensalidades.
@@ -89,28 +114,12 @@ const PricingUpsellSection = () => {
                 ))}
               </div>
 
-              {/* CTA Button */}
-              <div className="mt-12 space-y-6">
-                <a 
-                  href="#checkout" 
-                  className="cta-button w-full text-center py-6 px-4 text-xl sm:text-2xl flex items-center justify-center gap-3 animate-pulse-glow scale-105"
-                >
-                  👉 SIM! QUERO AUMENTAR MEUS LUCROS <ArrowRight className="w-6 h-6" />
-                </a>
-                <p className="text-[#c43c6f] font-black text-lg uppercase tracking-tight animate-bounce">
-                  Adicionar ao meu pedido agora
-                </p>
+              {/* Wiapy Upsell Widget */}
+              <div className="mt-12">
+                <div id="wiapy_upsell"></div>
               </div>
             </div>
           </motion.div>
-
-          {/* Rejection Button */}
-          <div className="text-center">
-            <button className="group flex items-center justify-center gap-2 mx-auto text-gray-400 hover:text-red-500 font-medium transition-all text-sm sm:text-base underline decoration-dotted max-w-xs sm:max-w-none">
-              <Ban className="w-4 h-4" />
-              Não, quero continuar sem personalizar meus uniformes e perdendo lucro.
-            </button>
-          </div>
         </div>
       </div>
     </section>
