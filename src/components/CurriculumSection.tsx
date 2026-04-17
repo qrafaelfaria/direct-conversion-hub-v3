@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { CheckCircle2, Scissors, PenTool, Layers, Sparkles, TrendingUp } from "lucide-react";
 
 const curriculumItems = [
-  { icon: Scissors, text: "Bordado em uniformes hospitalares" },
-  { icon: PenTool, text: "Personalização com nomes e logotipos" },
-  { icon: Sparkles, text: "Técnicas de silk screen e estamparia" },
-  { icon: Layers, text: "Acabamentos profissionais e duráveis" },
-  { icon: TrendingUp, text: "Precificação estratégica para peças personalizadas" },
+  { icon: Scissors, text: "+1.000 Moldes Adulto Feminino" },
+  { icon: PenTool, text: "+500 Moldes Infantis (2 a 16 anos)" },
+  { icon: Sparkles, text: "+750 Moldes para Roupas Fitness" },
+  { icon: Layers, text: " +100 Moldes de Vestidos Profissionais" },
+  { icon: TrendingUp, text: "Moldes de Roupinhas para Pet" },
 ];
 
 const CurriculumSection = () => {
@@ -20,8 +20,11 @@ const CurriculumSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl sm:text-4xl font-display font-black text-[#c43c6f] mb-4 uppercase tracking-tight">
-            📚 O Que Você Vai Aprender
+            É por isso que criamos o KIT PREMIUM DE MOLDES
           </h2>
+          <p className="text-xl text-black font-extrabold">
+            Um verdadeiro acervo profissional para você nunca mais ficar sem opções.
+          </p>
           <div className="w-20 h-1.5 bg-[#ffe500] mx-auto rounded-full" />
         </motion.div>
 
