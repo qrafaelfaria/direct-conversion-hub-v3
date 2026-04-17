@@ -2,6 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import CurriculumSection from "@/components/CurriculumSection";
 import ProfitSection from "@/components/ProfitSection";
 import PricingUpsellSection from "@/components/PricingUpsellSection";
+import FinalCTA from "@/components/FinalCTA";
 
 const Index = () => {
   return (
@@ -10,6 +11,7 @@ const Index = () => {
       <CurriculumSection />
       <ProfitSection />
       <PricingUpsellSection />
+      <FinalCTA />
     </div>
   );
 };
