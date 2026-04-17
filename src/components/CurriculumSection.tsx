@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
-import { CheckCircle2, Scissors, PenTool, Layers, Sparkles, TrendingUp } from "lucide-react";
+import { CheckCircle2, Shirt, Baby, Dumbbell, Rose, PawPrint } from "lucide-react";
 
 const curriculumItems = [
-  { icon: Scissors, text: "+1.000 Moldes Adulto Feminino" },
-  { icon: PenTool, text: "+500 Moldes Infantis (2 a 16 anos)" },
-  { icon: Sparkles, text: "+750 Moldes para Roupas Fitness" },
-  { icon: Layers, text: " +100 Moldes de Vestidos Profissionais" },
-  { icon: TrendingUp, text: "Moldes de Roupinhas para Pet" },
+  { icon: Shirt, text: "+1.000 Moldes Adulto Feminino" },
+  { icon: Baby, text: "+500 Moldes Infantis (2 a 16 anos)" },
+  { icon: Dumbbell, text: "+750 Moldes para Roupas Fitness" },
+  { icon: PawPrint, text: "Moldes de Roupinhas para Pet" },
 ];
 
 const CurriculumSection = () => {
