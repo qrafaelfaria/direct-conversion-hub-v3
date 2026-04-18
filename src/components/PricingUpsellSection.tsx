@@ -51,20 +51,6 @@ const PricingUpsellSection = () => {
                 </h2>
               </motion.div>
 
-              {/* Intro */}
-                <h2 className="text-gray-600 font-black text-xl tracking-tighter">
-                  
-                </h2>
-                <h2 className="text-gray-600 font-black text-xl tracking-tighter">
-                  
-                </h2>
-                <h2 className="text-gray-600 font-black text-xl tracking-tighter">
-                  
-                </h2>
-                <h2 className="text-gray-600 font-black text-xl  tracking-tighter">
-                  
-                </h2>
-
               {/* Pricing */}
               <div className="space-y-2">
                 <p className="text-4xl sm:text-5xl font-black text-[#c43c6f] my-4 drop-shadow-sm">
