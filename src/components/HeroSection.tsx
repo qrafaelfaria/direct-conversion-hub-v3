@@ -36,6 +36,18 @@ const HeroSection = () => {
 
             <p>Oportunidade única e exclusiva para novas alunas</p>
           </div>
+          <motion.div
+            initial={{ y: -10 }}
+            animate={{ y: 10 }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "reverse",
+              duration: 0.8,
+            }}
+            className="mt-4"
+          >
+            <ArrowDown className="w-10 h-10 text-[#c43c6f] mx-auto" />
+          </motion.div>
 
           <div className="max-w-4xl mx-auto my-10">
             <div className="relative bg-white border-4 border-[#c43c6f] rounded-[2.5rem] p-8 sm:p-16 text-center shadow-2xl overflow-hidden">
