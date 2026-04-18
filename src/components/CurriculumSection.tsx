@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CheckCircle2, Shirt, Baby, Dumbbell, Rose, PawPrint } from "lucide-react";
+import { CheckCircle2, Shirt, Baby, Dumbbell, Rose, PawPrint, ArrowRight } from "lucide-react";
 
 const curriculumItems = [
   { icon: Shirt, text: "+1.000 Moldes Adulto Feminino" },
@@ -46,6 +46,32 @@ const CurriculumSection = () => {
               <CheckCircle2 className="w-6 h-6 text-[#22c55e] ml-auto shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
             </motion.div>
           ))}
+        </div>
+
+        {/* O que isso muda na prática? */}
+        <div className="max-w-3xl mx-auto mt-12 text-center">
+          <h3 className="text-3xl sm:text-4xl font-display font-black text-[#c43c6f] mb-8">
+            O que isso muda na prática?
+          </h3>
+          <div className="space-y-4 text-xl sm:text-2xl leading-relaxed text-gray-800 font-semibold">
+            <p>Você deixa de depender de poucas peças…</p>
+            <p>E passa a ter resposta para qualquer cliente.</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 text-left">
+            {[
+              "Pediu roupa infantil? Você tem",
+              "Pediu vestido? Você tem",
+              "Pediu pet? Você tem",
+            ].map((item, i) => (
+              <div key={i} className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                <div className="bg-[#ffe500] p-1 rounded-full shrink-0">
+                  <ArrowRight className="w-5 h-5 text-black" />
+                </div>
+                <span className="font-bold text-gray-700">{item}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
