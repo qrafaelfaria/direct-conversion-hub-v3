@@ -47,23 +47,26 @@ const PricingUpsellSection = () => {
                 className="mb-8"
               >
                 <h2 className="text-3xl sm:text-5xl font-display font-black text-gray-900 leading-tight uppercase">
-                  🔥 DOWNSELL (DESCONTO FINAL)
+                  KIT MOLDES PREMIUM
                 </h2>
               </motion.div>
 
               {/* Intro */}
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="text-lg sm:text-xl text-gray-700 mb-8"
-              >
-                ⚠️ ESPERA… <br /> Talvez o único problema seja o valor agora. <br /> Então aqui vai uma condição única:
-              </motion.p>
+                <h2 className="text-gray-600 font-black text-xl tracking-tighter">
+                  
+                </h2>
+                <h2 className="text-gray-600 font-black text-xl tracking-tighter">
+                  
+                </h2>
+                <h2 className="text-gray-600 font-black text-xl tracking-tighter">
+                  
+                </h2>
+                <h2 className="text-gray-600 font-black text-xl  tracking-tighter">
+                  
+                </h2>
 
               {/* Pricing */}
               <div className="space-y-2">
-                <p className="text-gray-600 font-black text-xl uppercase tracking-tighter">💎 KIT PREMIUM DE MOLDES</p>
                 <p className="text-4xl sm:text-5xl font-black text-[#c43c6f] my-4 drop-shadow-sm">
                   Por apenas: R$ 14,90
                 </p>
