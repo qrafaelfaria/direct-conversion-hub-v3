@@ -15,7 +15,7 @@ const PricingUpsellSection = () => {
         linkUrl: "https://pay.wiapy.com/checkout/YOUR_DOWNSELL_CHECKOUT_ID", // TODO: Substituir pelo ID de checkout correto para a oferta de R$ 14,90
         linkText: "SIM! QUERO GARANTIR AGORA",
         styles: {
-          backgroundColor: "#c43c6f",
+          backgroundColor: "#c43c6fff",
           hoverBackgroundColor: "#75394fff",
           fontSize: "20px",
           borderRadius: "10px"
@@ -28,7 +28,7 @@ const PricingUpsellSection = () => {
   }, []);
 
   return (
-    <section id="downsell" className="py-12 sm:py-20 bg-white">
+    <section id="downsell" className="py-12 sm:py-20 bg-[#c43c6fff]">
       <div className="section-container">
         <div className="max-w-2xl mx-auto">
           {/* Downsell Card */}
@@ -49,12 +49,32 @@ const PricingUpsellSection = () => {
                 <h2 className="text-3xl sm:text-5xl font-display font-black text-gray-900 leading-tight uppercase">
                   KIT MOLDES PREMIUM
                 </h2>
+                <ul className="text-left text-gray-700 text-lg mt-4 space-y-2">
+                  <li className="flex items-center">
+                    <Check className="text-[#c43c6f] mr-2" size={20} /> Moldes de Roupinhas para Pet
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="text-[#c43c6f] mr-2" size={20} /> +750 Moldes para Roupas Fitness
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="text-[#c43c6f] mr-2" size={20} /> +500 Moldes Infantis
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="text-[#c43c6f] mr-2" size={20} /> +1.000 Moldes Adulto Feminino
+                  </li>
+                </ul>
               </motion.div>
 
               {/* Pricing */}
               <div className="space-y-2">
                 <p className="text-4xl sm:text-5xl font-black text-[#c43c6f] my-4 drop-shadow-sm">
                   Por apenas: R$ 14,90
+                </p>
+                <div className="bg-red-500 text-white font-bold py-2 px-4 rounded-full inline-block text-lg animate-pulse">
+                  OFERTA RELÂMPAGO!
+                </div>
+                <p className="text-red-600 text-xl font-bold mt-2">
+                  RESTAM APENAS 7 DISPONÍVEIS!
                 </p>
               </div>
 
