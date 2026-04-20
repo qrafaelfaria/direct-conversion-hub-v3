@@ -88,19 +88,54 @@ const HeroSection = () => {
             <div className="mt-12">
               <div id="wiapy_upsell"></div>
             </div>
+
+            {/* New Section: What you will receive */}
+            <div className="bg-[#fbe8ee] p-6 rounded-lg shadow-lg mt-12 max-w-md mx-auto">
+              <h3 className="text-[#c43c6f] text-3xl font-black mb-6 text-center">O que você vai receber:</h3>
+              <ul className="space-y-4 mb-8 text-lg">
+                <li className="flex items-left text-[#c43c6f] text-lg">
+                  <CheckCircle2 className="w-6 h-6 text-green-500 mr-3 flex-shrink-0" />
+                  +100 Moldes para bebês
+                </li>
+                <li className="flex items-left text-[#c43c6f] text-lg">
+                  <CheckCircle2 className="w-6 h-6 text-green-500 mr-3 flex-shrink-0" />
+                  +400 Moldes de Vestidos infantis
+                </li>
+                <li className="flex items-left text-[#c43c6f] text-lg">
+                  <CheckCircle2 className="w-6 h-6 text-green-500 mr-3 flex-shrink-0" />
+                  +280 Moldes de Vestidos Adultos
+                </li>
+                <li className="flex items-left text-[#c43c6f] text-lg">
+                  <CheckCircle2 className="w-6 h-6 text-green-500 mr-3 flex-shrink-0" />
+                  +750 Moldes para Roupas Fitness
+                </li>
+                <li className="flex items-left text-[#c43c6f] text-lg">
+                  <CheckCircle2 className="w-6 h-6 text-green-500 mr-3 flex-shrink-0" />
+                  +40 Moldes para Pets
+                </li>
+                <li className="flex items-left text-[#c43c6f] text-lg">
+                  <CheckCircle2 className="w-6 h-6 text-green-500 mr-3 flex-shrink-0" />
+                  Guia de Impressão
+                </li>
+              </ul>
+              <button className="w-full bg-[#c43c6f] text-white font-bold py-4 px-6 rounded-lg text-xl transition-colors duration-300">
+                Garantia de 30 dias ou seu dinheiro de volta!
+              </button>
+            </div>
+
           </motion.div>
         </div>
       </section>
       <section className="bg-[#c43c6f] text-white py-8 px-4 text-center">
         <p className="text-lg italic mb-4">
-          Essa é a sua única oportunidade de adquirir esses moldes como uma edição limitada e hoje é o último dia de oferta!
+          Essa é a sua única oportunidade de adquirir esses moldes pelo valor promocional! Ao fechar essa página, o valor voltará ao normal.
         </p>
         <div className="flex flex-col items-center justify-center mb-8">
           <img src="/logocostura.png" alt="Curso de Costura Hospitalar" className="w-48 h-auto mx-auto mb-4 rounded-full" />
         </div>
-        <div className="bg-[#ffe500] text-[#1a1a1a] py-4 px-4 text-center font-bold text-xl mb-4">
-          <p>OBRIGADO PELA COMPRA!</p>
-          <p>Seu acesso ao curso já foi enviado ao seu E-mail e WhatsApp!</p>
+        <div className="bg-[#ffe500] text-[#1a1a1a] py-4 px-4 text-center font-bold text-xl mb-4 gap-4 flex flex-col items-center justify-center">
+          <p>OBRIGADO PELA SUA INSCRIÇÃO!</p>
+          <p>Seu acesso ao curso já foi enviado ao seu E-mail!</p>
         </div>
       </section>
     </>
