@@ -3,10 +3,20 @@ import { CheckCircle2, AlertTriangle, Gem, ArrowRight, Ban, ArrowDown, TriangleA
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden pt-8 pb-12 sm:pt-16 sm:pb-20 bg-[#fbe8ee]">
+    <section className="relative overflow-hidden pt-8 pb-12 sm:pt-12 sm:pb-20 bg-[#c43c6f] text-white ">
       {/* Top Urgent Bar */}
-      <div className="bg-[#c43c6f] text-white py-2 text-center text-sm font-bold uppercase tracking-widest animate-pulse">
-        ⚠️ Atenção: Não feche ou atualize esta página. Esta oferta é única.
+      <div className="bg-[#a02a50] text-white py-2 text-center font-bold uppercase tracking-widest text-3xl bg-urgency">
+        🚨 ESPERE! TEMOS UMA OFERTA EXCLUSIVA PARA VOCÊ
+      </div>
+
+      {/* Countdown Timer */}
+      <div className="flex justify-center items-center gap-4 py-6 bg-urgency">
+        <div className="bg-white text-[#c43c6f] rounded-xl px-6 py-3 text-center font-bold text-2xl">
+          08 <span className="block text-sm font-normal">Minutos</span>
+        </div>
+        <div className="bg-white text-[#c43c6f] rounded-xl px-6 py-3 text-center font-bold text-2xl">
+          58 <span className="block text-sm font-normal">Segundos</span>
+        </div>
       </div>
 
       <div className="section-container mt-8">
@@ -16,72 +26,37 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="text-center max-w-5xl mx-auto"
         >
-          <div className="inline-flex flex-col items-center gap-2 mb-6">
-            <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#ffe500] text-black text-base font-black shadow-lg border-2 border-black/10">
-              <CheckCircle2 className="w-5 h-5" />
-              <span>PAGAMENTO CONFIRMADO!</span>
+          <h2 className="text-xl sm:text-2xl font-bold text-white text-balance mb-4">
+            Sua compra está quase finalizada… Mas antes, queremos te oferecer algo que pode <span className="text-[#ffe500]">aumentar sua renda ainda mais. </span>
+          </h2>
+
+          {/* Progress Bar */}
+          <div className="max-w-md mx-auto bg-[#a02a50] rounded-full h-8 flex items-center justify-between p-1 mb-8">
+            <div className="bg-[#ffe500] h-6 rounded-full flex items-center justify-end pr-2" style={{ width: '90%' }}>
+              <span className="text-[#c43c6f] text-sm font-bold">99%</span>
             </div>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-display font-black leading-[1.1] text-[#c43c6f] text-balance">
-            ESPERE! <br className="sm:hidden" />
-            <span className="text-gray-900">TRANSFORME-SE EM UMA</span> {" "}
-            <span className="relative inline-block">
-              <span className="relative z-10 text-white px-3 bg-[#c43c6f]">COSTUREIRA PREPARADA PARA</span>
-            </span>
-            <br /> QUALQUER CLIENTE
-          </h1>
-          
-          <div className="flex items-center justify-center gap-2 mt-6 text-xl sm:text-2xl font-bold text-gray-700">
-
-            <p>Oportunidade única e exclusiva para novas alunas</p>
+          {/* Down Arrows */}
+          <div className="flex justify-center my-8">
+            <ArrowDown className="w-12 h-12 text-[#ffe500] animate-bounce" />
+            <ArrowDown className="w-12 h-12 text-[#ffe500] animate-bounce delay-150" />
+            <ArrowDown className="w-12 h-12 text-[#ffe500] animate-bounce delay-300" />
           </div>
-          <motion.div
-            initial={{ y: -10 }}
-            animate={{ y: 10 }}
-            transition={{
-              repeat: Infinity,
-              repeatType: "reverse",
-              duration: 0.8,
-            }}
-            className="mt-4"
-          >
-            <ArrowDown className="w-10 h-10 text-[#c43c6f] mx-auto" />
-          </motion.div>
 
-          <div className="max-w-4xl mx-auto my-10">
-            <div className="relative bg-white border-4 border-[#c43c6f] rounded-[2.5rem] p-8 sm:p-16 text-center shadow-2xl overflow-hidden">
-              <div className="relative z-10 space-y-8 text-xl sm:text-2xl leading-relaxed text-gray-800 font-semibold">
-                <p>
-                  Agora você já sabe como produzir peças hospitalares profissionais… <span className="font-extrabold underline decoration-[#ffe500] decoration-4">mas deixa eu te perguntar uma coisa: </span>
-                </p>
-                
-                <p>
-                  <span className="text-2xl text-[#c43c6f] font-extrabold">👉 O que você faz quando aparece um pedido diferente?</span>
-                </p>
-                
-                <div className="grid grid-cols-1 gap-4 mt-10">
-                  {[
-                    "Quando a cliente pede algo que você não tem molde?",
-                    "Quando surge uma oportunidade nova?",
-                    "Quando você quer vender mais… mas não tem variedade?",
-                  ].map((benefit, i) => (
-                    <div key={i} className="flex items-start gap-4 bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:border-[#c43c6f]/30 transition-colors text-left">
-                      <div className="bg-red-500 text-white p-1 rounded-full shrink-0 mt-1">
-                        <TriangleAlert className="w-5 h-5 text-black" />
-                      </div>
-                      <span className="font-bold text-gray-700">{benefit}</span>
-                    </div>
-                  ))}
+          <p className="text-white text-lg sm:text-xl mb-8">
+            Agora, além dos 4 evangelhos, você também pode obter o livro de Apocalipse explicado versículo por versículo por um valor simbólico.
+          </p>
 
-                  <p>
-                  <span className="text-2xl text-black font-extrabold">A maioria trava aqui.</span>
-                </p>
-
-                </div>
-              </div>
-            </div>
+          {/* Product Image */}
+          <div className="flex justify-center">
+            <img src="/Moldes.png" alt="Super Pack de Moldes" className="max-w-full h-auto mx-auto" />
           </div>
+
+          {/* Pricing */}
+          <p className="text-white text-2xl sm:text-3xl font-bold mb-8">
+            De <span className="line-through">R$ 89,90</span> por <span className="text-[#ffe500]">R$ 7,90</span>
+          </p>
         </motion.div>
       </div>
     </section>
