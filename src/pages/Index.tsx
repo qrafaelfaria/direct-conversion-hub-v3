@@ -6,7 +6,7 @@ import FinalCTA from "@/components/FinalCTA";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background pb-16 sm:pb-0">
+    <div className="min-h-screen bg-background sm:pb-0">
       <HeroSection />
     </div>
   );
