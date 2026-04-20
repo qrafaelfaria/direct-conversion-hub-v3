@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, AlertTriangle, Gem, ArrowRight, Ban, ArrowDown, TriangleAlert } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 declare global {
   interface Window {
@@ -9,6 +9,8 @@ declare global {
 }
 
 const HeroSection = () => {
+  const [minutes, setMinutes] = useState(3);
+  const [seconds, setSeconds] = useState(0);
   useEffect(() => {
     if (typeof window.initWiapyUpsell === "function") {
       window.initWiapyUpsell({
@@ -27,6 +29,21 @@ const HeroSection = () => {
     }
   }, []);
 
+  useEffect(() => {
+    const countdownInterval = setInterval(() => {
+      if (seconds > 0) {
+        setSeconds(seconds - 1);
+      } else if (minutes > 0) {
+        setMinutes(minutes - 1);
+        setSeconds(59);
+      } else {
+        clearInterval(countdownInterval);
+      }
+    }, 1000);
+
+    return () => clearInterval(countdownInterval);
+  }, [minutes, seconds]);
+
   return (
     <>
       <section className="relative overflow-hidden pt-8 pb-12 sm:pt-12 sm:pb-20 bg-[#c43c6f] text-white">
@@ -38,10 +55,10 @@ const HeroSection = () => {
         {/* Countdown Timer */}
         <div className="flex justify-center items-center gap-4 py-6 bg-urgency">
           <div className="bg-white text-[#c43c6f] rounded-xl px-6 py-3 text-center font-bold text-2xl">
-            08 <span className="block text-sm font-normal">Minutos</span>
+            {String(minutes).padStart(2, '0')} <span className="block text-sm font-normal">Minutos</span>
           </div>
           <div className="bg-white text-[#c43c6f] rounded-xl px-6 py-3 text-center font-bold text-2xl">
-            58 <span className="block text-sm font-normal">Segundos</span>
+            {String(seconds).padStart(2, '0')} <span className="block text-sm font-normal">Segundos</span>
           </div>
         </div>
 
