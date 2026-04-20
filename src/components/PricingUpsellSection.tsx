@@ -1,4 +1,32 @@
+import { useEffect } from "react";
+import { motion } from "framer-motion";
+import { Check } from "lucide-react"; // Keep Check for FAQ
+
+declare global {
+  interface Window {
+    initWiapyUpsell: (config: any) => void;
+  }
+}
+
 const PricingUpsellSection = () => {
+  useEffect(() => {
+    if (typeof window.initWiapyUpsell === "function") {
+      window.initWiapyUpsell({
+        linkUrl: "https://pay.wiapy.com/checkout/69d71225585092329ccef181",
+        linkText: "SIM! QUERO GARANTIR AGORA",
+        styles: {
+          backgroundColor: "#c43c6fff",
+          hoverBackgroundColor: "#75394fff",
+          fontSize: "20px",
+          borderRadius: "10px"
+        },
+        refusalLinkUrl: "https://costurahospitalar.vercel.app",
+        refusalLinkText: "Não, vou deixar passar",
+        refusalLinkColor: "#000000"
+      });
+    }
+  }, []);
+
   return (
     <section id="downsell" className="py-12 sm:py-20 bg-[#c43c6fff]">
       <div className="section-container">
@@ -52,6 +80,11 @@ const PricingUpsellSection = () => {
               <p className="text-gray-500 text-lg font-bold italic mt-8">
                 🚫 Importante: Essa oferta não volta depois.
               </p>
+
+              {/* Wiapy Upsell Widget */}
+              <div className="mt-12">
+                <div id="wiapy_upsell"></div>
+              </div>
             </div>
           </motion.div>
         </div>
