@@ -44,8 +44,8 @@ const HeroSection = () => {
             <ArrowDown className="w-12 h-12 text-[#ffe500] animate-bounce delay-300" />
           </div>
 
-          <p className="text-white text-lg sm:text-xl mb-8">
-            Agora, além dos 4 evangelhos, você também pode obter o livro de Apocalipse explicado versículo por versículo por um valor simbólico.
+          <p className="text-white text-xl sm:text-2xl mb-8">
+            Agora, além do curso de Costura Hospitalar, você também pode obter o Super Pack de Moldes por um valor simbólico.
           </p>
 
           {/* Product Image */}
@@ -55,7 +55,7 @@ const HeroSection = () => {
 
           {/* Pricing */}
           <p className="text-white text-2xl sm:text-3xl font-bold mb-8">
-            De <span className="line-through">R$ 89,90</span> por <span className="text-[#ffe500]">R$ 7,90</span>
+            De <span className="line-through">R$ 49,90</span> por <span className="text-[#ffe500]">R$ 14,90</span>
           </p>
         </motion.div>
       </div>
