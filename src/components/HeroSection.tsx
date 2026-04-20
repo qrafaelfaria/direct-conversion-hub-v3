@@ -1,7 +1,32 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, AlertTriangle, Gem, ArrowRight, Ban, ArrowDown, TriangleAlert } from "lucide-react";
+import { useEffect } from "react";
+
+declare global {
+  interface Window {
+    initWiapyUpsell: (config: any) => void;
+  }
+}
 
 const HeroSection = () => {
+  useEffect(() => {
+    if (typeof window.initWiapyUpsell === "function") {
+      window.initWiapyUpsell({
+        linkUrl: "https://pay.wiapy.com/checkout/69d71225585092329ccef181",
+        linkText: "SIM! QUERO GARANTIR AGORA",
+        styles: {
+          backgroundColor: "#094b00ff",
+          hoverBackgroundColor: "#1e6b00ff",
+          fontSize: "20px",
+          borderRadius: "10px"
+        },
+        refusalLinkUrl: "https://costurahospitalar.vercel.app",
+        refusalLinkText: "Não, vou deixar passar",
+        refusalLinkColor: "#ffffffff"
+      });
+    }
+  }, []);
+
   return (
     <section className="relative overflow-hidden pt-8 pb-12 sm:pt-12 sm:pb-20 bg-[#c43c6f] text-white ">
       {/* Top Urgent Bar */}
@@ -57,6 +82,11 @@ const HeroSection = () => {
           <p className="text-white text-2xl sm:text-3xl font-bold mb-8">
             De <span className="line-through">R$ 49,90</span> por <span className="text-[#ffe500]">R$ 14,90</span>
           </p>
+
+          {/* Wiapy Upsell Widget */}
+          <div className="mt-12">
+            <div id="wiapy_upsell"></div>
+          </div>
         </motion.div>
       </div>
     </section>
