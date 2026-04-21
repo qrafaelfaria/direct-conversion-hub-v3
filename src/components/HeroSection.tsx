@@ -64,8 +64,8 @@ const HeroSection = () => {
 
 {/* Progress Bar */}
             <div className="max-w-sm mx-auto bg-[#a02a50] rounded-full h-8 flex items-center justify-between p-1 m-8">
-              <div className="bg-[#ffe500] h-6 rounded-full flex items-center justify-end pr-2" style={{ width: '90%' }}>
-                <span className="text-[#c43c6f] text-sm font-bold">99%</span>
+              <div className="bg-[#ffe500] h-6 rounded-full flex items-center justify-end pr-2" style={{ width: '96%' }}>
+                <span className="text-[#c43c6f] text-sm font-bold">Sua  compra  está  99%  concluída!</span>
               </div>
             </div>
 
