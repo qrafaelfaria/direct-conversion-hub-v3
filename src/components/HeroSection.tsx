@@ -89,7 +89,7 @@ const HeroSection = () => {
             </div>
 
             <p className="text-white text-xl sm:text-2xl mb-8">
-              Agora, além do Curso de Costura Hospitalar, você pode garantir acesso ao Super Pack de Moldes Profissionais. <span className="text-[#ffe500]">Um acervo completo para você produzir, variar e vender muito mais.</span> 
+              Agora, além do Curso de Costura Hospitalar, você pode garantir acesso ao Super Pack de Moldes Profissionais. <span className="text-[#ffe500] font-bold">Um acervo completo para você produzir, variar e vender muito mais.</span> 
             </p>
 
             {/* Product Image */}
