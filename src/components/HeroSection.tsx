@@ -22,7 +22,7 @@ const HeroSection = () => {
           fontSize: "20px",
           borderRadius: "10px"
         },
-        refusalLinkUrl: "https://costurahospitalar.vercel.app",
+        refusalLinkUrl: "https://downsellkit01.vercel.app",
         refusalLinkText: "Não, vou deixar passar",
         refusalLinkColor: "#ffffffff"
       });
