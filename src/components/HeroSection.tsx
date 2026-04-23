@@ -99,7 +99,7 @@ const HeroSection = () => {
 
             {/* Pricing */}
             <p className="text-white text-2xl sm:text-3xl font-bold mt-8">
-              De <span className="line-through">R$ 49,90</span> por <span className="text-[#ffe500]">R$ 14,90</span>
+              De <span className="line-through">R$ 49,90</span> por <span className="text-[#ffe500]">R$ 9,90</span>
             </p>
 
             {/* New Section: What you will receive */}
